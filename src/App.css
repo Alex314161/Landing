@@ -1,38 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border-radius: 50px;
+    color: #001185;
+    background: #FA8E5A;
+    border: none;
+    height: 70px;
+    width: 340px;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.005em;
+    text-transform: uppercase;
+}
+
 .App {
-  text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 65px;
+    background-color: #F9E7D9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Navbar__list {
+    display: flex;
+    justify-content: space-around;
+    width: 550px;
+    text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Navbar__list a {
+    font-family: 'Pribambas';
+    text-decoration: none;
+    color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.Content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Stock {
+    display: flex;
+    flex-direction: column;
+}
+
+.Stock__description {
+    text-align: center;
+    padding: 3% 0px;
+    background-color: #F9E7D9;
+    box-shadow: 0px 5px 3px -1px rgba(0, 0, 0, 0.25) inset;
+}
+
+.Stock__description span {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.005em;
+    color: #A95099;
+    padding: 2% 0px;
+}
+
+.Stock__description button {
+    height: 70px;
+    width: 340px;
+    margin-top: 2%;
+}
+
+
+.Stock h2 {
+    font-family: 'Pribambas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.005em;
+    text-transform: uppercase;
+    color: #001185;
+}
+
+.Stock h1 {
+    background: url("./img/background_text.png");
+}
+
+.Stock_text_form {
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #001185;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.Stock__date {
+    font-family: 'Pribambas';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.005em;
+    text-transform: uppercase;
+    color: #001185;
+    padding: 2% 0;
+}
+
+#Stock__timer {
+    font-weight: bold;
+}
+
+.Text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5% 15%;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.Projects {
+    height: 741px;
+}
+
+.Projects__caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    background-color:  #F9E7D9;
+    font-family: 'Pribambas';
+    text-transform: uppercase;
+}
+
+.Projects__item {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+
+.Afish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 189px;
+    background-color: #F9E7D9;
+}
+
+.Organizers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.Organizers__logo {
+    margin: 3% 0;
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.Organizers__supports {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.Supports__logo-center {
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.Partners__logo {
+    text-align: center;
+    width: 600px;
+}
+
+.Contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    background-color: #F9E7D9;
+}
+
+#contacts-bold {
+    font-weight: bold;
+}
+
+.Contacts__logo {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.Contacts__logo img {
+    width: 40px;
+    height: 40px;
+    background: black;
+    object-fit: scale-down;
+    border-radius: 50%;
+}
+
+@font-face {
+    font-family: "Pribambas";
+    src: url("./fonts/Pribambas-Regular.ttf");
 }
