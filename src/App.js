@@ -17,7 +17,7 @@ function App() {
         <div className="App">
             <Header showResult={showResult} setShowResult={setShowResult}/>
             <Routes>
-                <Route path="/" element={<MainPage/>}/>
+                <Route path="/Landing" element={<MainPage/>}/>
                 <Route path="/stock" element={<Stock/>}/>
                 <Route path="/poster" element={<Poster/>}/>
                 <Route path="/organizers" element={<Organizers/>}/>
