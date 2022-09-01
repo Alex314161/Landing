@@ -4,13 +4,14 @@
     padding: 0;
 }
 
-button {
+.orange-button {
     border-radius: 50px;
     color: #001185;
     background: #FA8E5A;
     border: none;
     height: 70px;
-    width: 340px;
+    width: max-content;
+    padding: 0 4%;
     font-family: 'Calibri';
     font-style: normal;
     font-weight: 700;
@@ -21,27 +22,56 @@ button {
 }
 
 .App {
+    display: flex;
+    flex-direction: column;
     max-width: 1440px;
+    height: 100%;
     margin: 0 auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
-
 .Navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 65px;
+    padding: 0 50px;
     background-color: #F9E7D9;
 }
 
-.Navbar__list {
-    display: flex;
-    justify-content: space-around;
-    width: 550px;
-    text-transform: uppercase;
+.menu-button {
+    display: none;
 }
 
-.Navbar__list a {
+.Navbar__menu {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 30%;
+}
+
+.drop-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 1.2em;
+}
+
+.drop-menu a {
+    font-family: 'Pribambas';
+    text-decoration: none;
+    color: black;
+}
+
+.drop-menu a:hover{
+    transform: scale(115%);
+}
+
+.drop-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.drop-menu a {
     font-family: 'Pribambas';
     text-decoration: none;
     color: black;
@@ -51,6 +81,7 @@ button {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    min-height: 100%;
 }
 
 .Stock {
@@ -60,9 +91,9 @@ button {
 
 .Stock__description {
     text-align: center;
-    padding: 3% 0px;
+    padding: 3% 0;
     background-color: #F9E7D9;
-    box-shadow: 0px 5px 3px -1px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0 5px 3px -1px rgba(0, 0, 0, 0.25) inset;
 }
 
 .Stock__description span {
@@ -73,12 +104,13 @@ button {
     line-height: 44px;
     letter-spacing: -0.005em;
     color: #A95099;
-    padding: 2% 0px;
+    padding: 2% 0;
 }
 
 .Stock__description button {
     height: 70px;
-    width: 340px;
+    width: max-content;
+    padding: 0 4%;
     margin-top: 2%;
 }
 
@@ -138,7 +170,7 @@ button {
 }
 
 .Projects {
-    height: 741px;
+    margin-bottom: 100px;
 }
 
 .Projects__caption {
@@ -154,7 +186,7 @@ button {
 .Projects__item {
     display: flex;
     justify-content: space-around;
-    margin-top: 7%;
+    margin-top: 2%;
 }
 
 .Afish {
@@ -177,55 +209,134 @@ button {
     margin: 3% 0;
     display: flex;
     justify-content: space-around;
-    width: 600px;
+    width: 50%;
 }
 
 .Organizers__supports {
     display: flex;
     justify-content: space-around;
+    width: 100%;
     margin-top: 4%;
     text-align: center;
 }
 
+.Supports__logo {
+    width: 50%;
+}
+
 .Supports__logo-center {
     display: flex;
-    width: 600px;
+    width: 100%;
     justify-content: space-around;
     margin-top: 10%;
 }
 
 .Partners__logo {
     text-align: center;
-    width: 600px;
+    width: 50%;
 }
 
-.Contacts {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 150px;
-    background-color: #F9E7D9;
-}
-
-#contacts-bold {
-    font-weight: bold;
-}
-
-.Contacts__logo {
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-}
-
-.Contacts__logo img {
-    width: 40px;
-    height: 40px;
-    background: black;
-    object-fit: scale-down;
-    border-radius: 50%;
-}
 
 @font-face {
     font-family: "Pribambas";
     src: url("./fonts/Pribambas-Regular.ttf");
+}
+
+@media (max-width: 414px){
+    .App{
+        min-width: 100%;
+    }
+
+    .Navbar{
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .Navbar img {
+        width: 20%;
+        height: 100%;
+    }
+
+    .drop-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+        font-size: 2em;
+    }
+
+    .drop-menu a {
+        margin: 5px 0;
+    }
+
+    .menu-button {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url("./img/menu.png") 50% 50% no-repeat;
+        background-size: cover;
+        border: none;
+    }
+
+    .menu-button:active + .Navbar__menu {
+        display: flex;
+    }
+
+    .Stock__description {
+        padding-bottom: 8%;
+    }
+
+    .Stock__description h2 {
+        margin: 5% 0;
+    }
+
+    .Stock_text_form {
+        width: 100%;
+    }
+
+
+    .Stock__description img {
+        width: 100%;
+    }
+
+    .Content {
+        width: 100%;
+    }
+
+    .Projects__item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Organizers__logo {
+        flex-direction: column;
+        width: 200px;
+        height: 500px;
+    }
+
+    .Organizers__supports {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Supports__logo {
+        margin: 5% 0;
+    }
+
+    .Supports__logo-center {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 200px;
+        height: 500px;
+    }
+
+    .Partners__logo {
+        margin-bottom: 15%;
+    }
+
+    .Contacts {
+        flex-direction: column;
+        padding: 5% 0;
+    }
 }

@@ -1,16 +1,16 @@
 import React from "react";
-import styles from './css-modules/project-block.module.css'
-import line from '../img/Line.svg'
+import styles from './css/project-block.module.css'
+import line from '../../img/Line.svg'
 
 function ProjectBlock(props){
     return(
         <div className={styles.container}>
-            <img src={props.img}/>
+            <img src={props.img} alt="img"/>
             <div className={styles.block_bgrnd}>
                 <p>{props.text}</p>
                 <div className={styles.block}>
                     <img src={line} alt="line"/>
-                    <a href="">Узнать больше</a>
+                    <a href="1">Узнать больше</a>
                 </div>
             </div>
         </div>
