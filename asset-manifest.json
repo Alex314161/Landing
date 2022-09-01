@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Landing/static/css/main.4b97b60f.css",
-    "main.js": "/Landing/static/js/main.3bb060eb.js",
+    "main.js": "/Landing/static/js/main.35cc7ad3.js",
     "static/js/787.dd4029b4.chunk.js": "/Landing/static/js/787.dd4029b4.chunk.js",
     "static/media/ICOM_NC_Russia2 1.svg": "/Landing/static/media/ICOM_NC_Russia2 1.9ed65a73fd307f3ed867f401b948ed14.svg",
     "static/media/project2.png": "/Landing/static/media/project2.58ce0d5091be6ed54278.png",
@@ -22,11 +22,11 @@
     "index.html": "/Landing/index.html",
     "static/media/Line.svg": "/Landing/static/media/Line.18a8c71e418ce1ffe39403f5da2f7c62.svg",
     "main.4b97b60f.css.map": "/Landing/static/css/main.4b97b60f.css.map",
-    "main.3bb060eb.js.map": "/Landing/static/js/main.3bb060eb.js.map",
+    "main.35cc7ad3.js.map": "/Landing/static/js/main.35cc7ad3.js.map",
     "787.dd4029b4.chunk.js.map": "/Landing/static/js/787.dd4029b4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b97b60f.css",
-    "static/js/main.3bb060eb.js"
+    "static/js/main.35cc7ad3.js"
   ]
 }
