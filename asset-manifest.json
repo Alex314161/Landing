@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Landing/static/css/main.4b97b60f.css",
-    "main.js": "/Landing/static/js/main.35cc7ad3.js",
+    "main.css": "/Landing/static/css/main.6241be74.css",
+    "main.js": "/Landing/static/js/main.d7c3bbda.js",
     "static/js/787.dd4029b4.chunk.js": "/Landing/static/js/787.dd4029b4.chunk.js",
     "static/media/ICOM_NC_Russia2 1.svg": "/Landing/static/media/ICOM_NC_Russia2 1.9ed65a73fd307f3ed867f401b948ed14.svg",
     "static/media/project2.png": "/Landing/static/media/project2.58ce0d5091be6ed54278.png",
@@ -21,12 +21,12 @@
     "static/media/menu.png": "/Landing/static/media/menu.3e3138a3f5f3a50c8996.png",
     "index.html": "/Landing/index.html",
     "static/media/Line.svg": "/Landing/static/media/Line.18a8c71e418ce1ffe39403f5da2f7c62.svg",
-    "main.4b97b60f.css.map": "/Landing/static/css/main.4b97b60f.css.map",
-    "main.35cc7ad3.js.map": "/Landing/static/js/main.35cc7ad3.js.map",
+    "main.6241be74.css.map": "/Landing/static/css/main.6241be74.css.map",
+    "main.d7c3bbda.js.map": "/Landing/static/js/main.d7c3bbda.js.map",
     "787.dd4029b4.chunk.js.map": "/Landing/static/js/787.dd4029b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b97b60f.css",
-    "static/js/main.35cc7ad3.js"
+    "static/css/main.6241be74.css",
+    "static/js/main.d7c3bbda.js"
   ]
 }
