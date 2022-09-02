@@ -17,13 +17,12 @@ function App() {
         <div className="App">
             <Header showResult={showResult} setShowResult={setShowResult}/>
             <Routes>
-                <Route path="/Landing/" element={<Navigate to="/Landing/home"/>}/>
-                <Route path="/Landing/home" element={<MainPage/>}/>
-                <Route path="/Landing/stock" element={<Stock/>}/>
-                <Route path="/Landing/poster" element={<Poster/>}/>
-                <Route path="/Landing/organizers" element={<Organizers/>}/>
-                <Route path="/Landing/projects" element={<Projects/>}/>
-                <Route path="/Landing/partners" element={<Partners/>}/>
+                <Route path={process.env.PUBLIC_URL + '/'} element={<MainPage/>}/>
+                <Route path={process.env.PUBLIC_URL + '/stock'} element={<Stock/>}/>
+                <Route path={process.env.PUBLIC_URL + '/poster'} element={<Poster/>}/>
+                <Route path={process.env.PUBLIC_URL + '/organizers'} element={<Organizers/>}/>
+                <Route path={process.env.PUBLIC_URL + '/projects'} element={<Projects/>}/>
+                <Route path={process.env.PUBLIC_URL + '/partners'} element={<Partners/>}/>
             </Routes>
             <Footer/>
         </div>
