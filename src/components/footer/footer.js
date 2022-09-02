@@ -3,7 +3,7 @@ import youtube from "../../img/youtube 1 1.svg";
 import vk from "../../img/VK1 1.svg";
 import facebook from "../../img/facebook1 1.svg";
 import instagram from "../../img/inst1 1.svg";
-import styles from './css/FooterPageStyles.module.css'
+import styles from './FooterPageStyles.module.css'
 
 export default function Footer(){
     return(

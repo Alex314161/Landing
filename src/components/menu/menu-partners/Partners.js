@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './css/PartnersPageStyles.module.css'
+import styles from './PartnersPageStyles.module.css'
 
 export default function Partners(){
     return(

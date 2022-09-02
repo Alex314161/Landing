@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './css/project-block.module.css'
+import styles from './project-block.module.css'
 import line from '../../img/Line.svg'
 
 function ProjectBlock(props){

@@ -1,5 +1,3 @@
-import React from "react";
-
 function Timer(){
     let date1 = new Date('April 18, 2023');
     let date2 = new Date();

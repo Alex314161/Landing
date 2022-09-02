@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 export default function Menu() {
     return(
-        <div className="drop-menu" href="javascript:void(0);">
+        <div className="drop-menu">
             <NavLink to="/Landing/stock">Акция</NavLink>
             <NavLink to="/Landing/poster">Афиша</NavLink>
             <NavLink to="/Landing/organizers">Организаторы</NavLink>

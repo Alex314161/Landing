@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './css/StockPageStyles.module.css'
+import styles from './StockPageStyles.module.css'
 
 export default function Stock(){
     return(

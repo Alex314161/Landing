@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './css/ProjectsPageStyles.module.css'
+import styles from './ProjectsPageStyles.module.css'
 
 export default function Projects(){
     return(

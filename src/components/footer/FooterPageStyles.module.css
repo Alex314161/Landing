@@ -1,0 +1,32 @@
+.Contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 180px;
+    width: 100%;
+    background-color: #F9E7D9;
+}
+
+.Contacts a {
+    text-decoration: none;
+    color: black;
+}
+
+.Contacts span {
+    font-weight: bold;
+}
+
+.Contacts__logo {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.Contacts__logo img {
+    width: 40px;
+    height: 40px;
+    background: black;
+    object-fit: scale-down;
+    border-radius: 50%;
+}

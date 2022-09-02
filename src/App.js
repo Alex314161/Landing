@@ -1,6 +1,6 @@
 import './App.css';
-import React, {useState} from "react";
-import {Navigate, Route, Router, Routes} from "react-router-dom";
+import React, {useEffect, useRef, useState} from "react";
+import { Route, Routes} from "react-router-dom";
 import MainPage from "./components/MainPage/MainPage";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";

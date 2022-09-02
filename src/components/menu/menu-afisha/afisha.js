@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './css/PosterStyles.module.css'
+import styles from './PosterStyles.module.css'
 
 export default function Poster(){
     return(
