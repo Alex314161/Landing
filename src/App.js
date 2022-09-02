@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState} from "react";
-import {Route, Routes} from "react-router-dom";
+import {Route, Router, Routes} from "react-router-dom";
 import MainPage from "./components/MainPage/MainPage";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
@@ -16,14 +16,14 @@ function App() {
     return (
         <div className="App">
             <Header showResult={showResult} setShowResult={setShowResult}/>
-            <Routes>
-                <Route path="/Landing" element={<MainPage/>}/>
-                <Route path="/stock" element={<Stock/>}/>
-                <Route path="/poster" element={<Poster/>}/>
-                <Route path="/organizers" element={<Organizers/>}/>
-                <Route path="/projects" element={<Projects/>}/>
-                <Route path="/partners" element={<Partners/>}/>
-            </Routes>
+            <Router>
+                <Route path="/Landing/" exact element={<MainPage/>}/>
+                <Route path="/Landing/stock" exact element={<Stock/>}/>
+                <Route path="/Landing/poster" exact element={<Poster/>}/>
+                <Route path="/Landing/organizers" exact element={<Organizers/>}/>
+                <Route path="/Landing/projects" exact element={<Projects/>}/>
+                <Route path="/Landing/partners" exact element={<Partners/>}/>
+            </Router>
             <Footer/>
         </div>
     );

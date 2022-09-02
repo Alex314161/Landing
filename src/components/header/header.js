@@ -5,7 +5,7 @@ import Menu from "../menu/menu";
 export default function Header(props){
     return(
         <header className="Navbar">
-            <a href="/"><img src={logo} alt="logo"/></a>
+            <a href="/Landing/"><img src={logo} alt="logo"/></a>
             <button className="menu-button" onClick={() => {
                 props.setShowResult(!props.showResult);
             }}></button>

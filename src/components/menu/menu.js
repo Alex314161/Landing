@@ -3,11 +3,11 @@ import React from "react";
 export default function Menu() {
     return(
         <div className="drop-menu" href="javascript:void(0);">
-            <a href="/stock">Акция</a>
-            <a href="/poster">Афиша</a>
-            <a href="/organizers">Организаторы</a>
-            <a href="/projects">спецпроекты</a>
-            <a href="/partners">партнеры</a>
+            <a href="/Landing/stock">Акция</a>
+            <a href="/Landing/poster">Афиша</a>
+            <a href="/Landing/organizers">Организаторы</a>
+            <a href="/Landing/projects">спецпроекты</a>
+            <a href="/Landing/partners">партнеры</a>
         </div>
     )
 };
